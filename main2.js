@@ -68,7 +68,8 @@ button.addEventListener('click', (e) => {
         headers: {
             'content-type': 'application/x-www-form-urlencoded',
             'aaron': '26'
-        }
+        },
+        body: '这是请求第四部分'
     })
 
     promise.then(
