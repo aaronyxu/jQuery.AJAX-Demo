@@ -70,11 +70,12 @@ function f2(x) { return x }
 button.addEventListener('click', (e) => {
     window.jQuery.ajax({
         url: '/xxx',
-        method: 'GET',
+        method: 'POST',
         headers: {
             'content-type': 'application/x-www-form-urlencoded',
             'frank': '18'
         },
+        body: '请求第四部分',
         success: (responseText) => {
             f1.call(undefined, responseText)
             f2.call(undefined, responseText)
