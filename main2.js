@@ -64,7 +64,7 @@ window.$ = jQuery
 button.addEventListener('click', (e) => {
     let promise = window.jQuery.ajax({
         url: '/xxx',
-        method: 'GET',
+        method: 'GET'
     })
 
     promise.then(
