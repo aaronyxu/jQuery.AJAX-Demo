@@ -65,11 +65,6 @@ button.addEventListener('click', (e) => {
     let promise = window.jQuery.ajax({
         url: '/xxx',
         method: 'GET',
-        headers: {
-            'content-type': 'application/x-www-form-urlencoded',
-            'aaron': '26'
-        },
-        body: '这是请求第四部分'
     })
 
     promise.then(
